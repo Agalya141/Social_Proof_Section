@@ -5,3 +5,38 @@
     --light-grayish-magenta : hsl(300, 24%, 96%);
     --white : hsl(0, 0%, 100%);
 }
+body{
+    background:url(bg-pattern-top-desktop.svg)
+}
+h1{
+    color:var(--magenta);
+}
+img{
+    border-radius:50%;
+}
+.text{
+    color:var(--dark-grayish-magenta)
+}
+.about{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+    text-wrap:wrap;
+    display:inline-block;
+}
+.user{
+    background-color:var(--light-grayish-magenta);
+    padding:1rem;
+    margin:1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    
+}
+.rate{
+    gap:4%;
+    display:flex;
+}
+
