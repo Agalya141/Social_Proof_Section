@@ -5,18 +5,20 @@
     --light-grayish-magenta : hsl(300, 24%, 96%);
     --white : hsl(0, 0%, 100%);
 }
-
+*{
+    box-sizing:border-box;
+}
 body{
     background:url(bg-pattern-top-desktop.svg);
     background-repeat:no-repeat;
     font-family: 'League Spartan', sans-serif;
     margin:0;
     background-size:cover;
-    box-sizing: border-box;
+    
+    
 }
 .about{
     display:flex;
-    flex-direction:row;
     gap:2rem;
     align-items:flex-start;
     flex:1;
@@ -31,7 +33,15 @@ h1{
 .text{
     font-size:1rem;
     color:var(--dark-grayish-magenta);
-    max-width:50rem;
+    max-width:800px;
+    line-height:1.5;
+}
+.reviewers{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    gap:1.5rem;
 }
 .review{
     display:flex;
@@ -50,7 +60,7 @@ h1{
     display:flex;
     justify-content:center;
     align-items:center;
-    border-radius:5%;
+    border-radius:0.5rem;
  }
     .rate{
         color:var(--magenta);
@@ -63,11 +73,13 @@ h1{
     .reviewer{
         background-color:var(--magenta);
         padding:1rem;
-       flex:1;
+        flex:1;
         border-radius:0.5rem;
         display:flex;
         align-items:flex-start;
         flex-direction:column;
+        width:15rem;
+        min-height:20rem;
         }
     .profile{
         display:flex;
@@ -87,7 +99,12 @@ h1{
     color:var(--white);
     margin:0;
     padding:0;
-    width:100%;
+    
+   }
+   footer{
+    display:flex;
+    align-items:center;
+    justify-content:center;
    }
    
 
