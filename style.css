@@ -13,7 +13,7 @@ body{
     background-repeat:no-repeat;
     font-family: 'League Spartan', sans-serif;
     margin:0;
-    background-size:cover;
+    background-position:top left;
     
     
 }
@@ -33,7 +33,7 @@ h1{
 .text{
     font-size:1rem;
     color:var(--dark-grayish-magenta);
-    max-width:800px;
+    max-width:450px;
     line-height:1.5;
 }
 .reviewers{
@@ -58,7 +58,7 @@ h1{
     padding:1rem;
     margin:1rem;
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
     border-radius:0.5rem;
  }
@@ -66,8 +66,7 @@ h1{
         color:var(--magenta);
         font-weight:700;
        margin-left:1rem;
-       display:flex;
-       align-items:center;
+    
     }
    
     .reviewer{
@@ -78,16 +77,16 @@ h1{
         display:flex;
         align-items:flex-start;
         flex-direction:column;
-        width:15rem;
-        min-height:20rem;
+        max-width:22rem;
+       
         }
     .profile{
         display:flex;
-       
+        align-items:center;
+        gap:1.5rem;
+        margin-bottom:1.5rem;
     }
-    .user-review2{
-         margin-left:1rem;
-    }
+
    .name{
     color:var(--white);
 
@@ -105,6 +104,8 @@ h1{
     display:flex;
     align-items:center;
     justify-content:center;
+    margin-top:3rem;
+    padding:1rem;
    }
    
 
