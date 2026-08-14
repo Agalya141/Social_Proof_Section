@@ -136,19 +136,51 @@ h1{
     margin-top:3rem;
     padding:1rem;
    }
+   
    @media(max-width:37.5rem){
+    
     .social-proof{
         display:flex;
         flex-direction:column;
-        justify-content:center;
         align-items:center;
-        gap:3rem;
+        gap:1.5rem;
          width:100%;
-         flex-wrap:wrap;
+         padding:1.5rem;
     }
-    .heading,.review{
-       display:block
-        
+    .about{
+       display:flex;
+       flex-direction:column;
+       width:100%;
+       text-align:center;
+       margin-bottom:1rem;
+       justify-content:center;
+       align-items:center;
+}
+    .text{
+        margin-left:1.5rem;
+    }
+    .review{
+        margin:0;
+}
+    .user{
+        margin:1rem 0;
+        gap:1rem;
+    }
+    .user-review2{
+        gap:0.50rem;
+    }
+    .reviewers{
+        display:flex;
+        row-gap: 1rem;
+       flex-direction:column;
+    }
+    .reviewer{
+        margin-top:2rem;
+    }
+    footer{
+        display:flex;
+        align-items:center;
+        justify-content:center;
     }
    }
 
