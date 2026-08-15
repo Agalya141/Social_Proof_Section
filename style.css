@@ -36,7 +36,7 @@ h1{
 .text{
     font-size:1rem;
     color:var(--dark-grayish-magenta);
-    max-width:450px;
+    max-width:28rem;
     line-height:1.5;
 }
 
