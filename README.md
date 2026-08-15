@@ -95,4 +95,4 @@ Areas I want to keep working on in future challenges:
 ## Author
 
 - GitHub - [@Agalya141](https://github.com/Agalya141)
-- Frontend Mentor - [Add your Frontend Mentor username here](https://www.frontendmentor.io/profile/Agalya141)
+- Frontend Mentor - (https://www.frontendmentor.io/profile/Agalya141)
