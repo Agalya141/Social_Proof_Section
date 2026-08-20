@@ -1,7 +1,7 @@
 :root{
     --magenta : hsl(300, 43%, 22%);
     --soft-pink : hsl(333, 80%, 67%);
-    --dark-grayish-magenta : hsl(303, 10%, 53%);
+    --dark-grayish-magenta : hsl(303, 10%, 40%);
     --light-grayish-magenta : hsl(300, 24%, 96%);
     --white : hsl(0, 0%, 100%);
 }
@@ -9,8 +9,9 @@
     box-sizing:border-box;
 }
 body{
-    background:url(bg-pattern-top-desktop.svg);
-    background-repeat:no-repeat;
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
     font-family: 'League Spartan', sans-serif;
     margin:0;
     background-position:top left;
@@ -41,27 +42,24 @@ h1{
 }
 
 .review{
-    display:flex;
-   flex-direction:column;
-   align-items:flex-start;
+    display:grid;
+    gap:1rem;
    
 }
 
 .user{
     background-color:var(--light-grayish-magenta);
     padding:1rem 2rem;
-    margin:0.50rem;
+    margin:0;
+    width:min(100%, 27.75rem);
     display:flex;
     justify-content:flex-start;
     align-items:center;
     border-radius:0.5rem;
  }
 
- .user-review2{
-    margin-left: 4rem;
- }
- .user-review3{
-    margin-left: 7rem;
+ .user-review2,.user-review3{
+     justify-self: center; 
  }
 .rate{
         color:var(--magenta);
@@ -70,12 +68,10 @@ h1{
     
     }
 
-    .reviewers{
-    display:flex;
-    align-items:center;
-    justify-content:space-evenly;
-    flex-wrap:wrap;
-    gap:0.50rem;
+    .reviewers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
 }
  .reviewer{
         background-color:var(--magenta);
@@ -134,7 +130,11 @@ h1{
    }
    
    @media(max-width:37.5rem){
-    
+    @media (max-width: 600px) {
+    body {
+        background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    }
+}
     .social-proof{
         display:flex;
         flex-direction:column;
